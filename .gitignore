@@ -1,0 +1,5 @@
+.venv
+creds.py
+*.log
+prompts.txt
+__pycache__

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+(
+    sleepTime=$(echo "60 * ${1:-60}" | bc)
+    echo "Sleeping for $sleepTime seconds"
+    sleep $sleepTime
+    pmset sleepnow
+) &
